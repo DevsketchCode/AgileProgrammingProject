@@ -1,1 +1,179 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agile Programming Project - Elevator Pitches</title>
+  <style>
+    main {
+      border: 1px solid black;
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      margin: 0 auto;
+      padding: 30px;
+      width: 75%;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    section {
+      padding: 10px 15px;
+    }
+
+    #availabilityTable {
+      border: 1px solid black;
+      text-align: center;
+      width: 200px;
+    }
+
+    .pitchWrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .pitch {
+      margin: 0px 30px;
+      min-width: 300px;
+      max-width: 400px;
+    }
+
+    .pitch ul {
+      padding-left: 0;
+    }
+
+    .pitch li {
+      list-style-type: none;
+    }
+
+    .availSideNote {
+      text-align: left;
+      width: 200px;
+    }
+
+    @media only screen and (max-width: 820px) {
+      main {
+        flex-direction: column;
+      }
+
+      #availability {
+        width: 100%;
+        text-align: center;
+      }
+
+      #availabilityTable {
+        margin: 0 auto;
+      }
+      .availSideNote {  
+        margin: 0 auto;
+      }
+    }
+
+    @media only screen and (max-width: 520px) {
+      main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .pitch {
+        padding: 0px;
+        min-width: 150px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>David Oberlander</h1>
+  </header>
+  <main>
+    <section id="availability">
+      <table id="availabilityTable">
+        <caption><h1>Availability</h1></caption>
+        <thead>
+          <th>Days</th>
+          <th>Hours</th>
+        </thead>
+        <tr>
+          <td>Sunday</td>
+          <td>After 1:00PM</td>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>After 7:30PM</td>
+        </tr>
+        <tr>          
+          <td>Tuesday</td>
+          <td>After 7:30PM</td>
+        </tr>
+        <tr>          
+          <td>Wednesday</td>
+          <td>After 7:30PM</td>
+        </tr>
+        <tr>          
+          <td>Thursday</td>
+          <td>Not Available</td>
+        </tr>
+        <tr>          
+          <td>Friday</td>
+          <td>After 7:30PM</td>
+        </tr>
+        <tr>          
+          <td>Saturday</td>
+          <td>After 2:00PM</td>
+        </tr>
+      </table>
+      <p class="availSideNote">I may be available before 7:30PM during the week.  It depends on my varied work schedule.</p>
+    </section>
+    <section>
+      <h2>Top Three Elevator Pitches</h2>
+      <hr>
+      <div class="pitchWrapper">
+        <div class="pitch">
+          <h3>Pitch #1</h3>
+          <ul>
+            <li><strong>For </strong>pet lovers</li>
+            <li><strong>who </strong>want to find a new pet but unsure what to get and where,</li>
+            <li><strong>the </strong>Pet Chaser</li>
+            <li><strong>is an </strong>animal searching web application</li>
+            <li><strong>that </strong>helps you find the pet of your dreams.</li><br>
+            <li><strong>Unlike </strong>traveling to each animal shelter to find your pet,</li>
+            <li><strong>our product </strong>allows you to search for them in the comfort of your own home, searching multiple shelters for any or all species to help find the right pet for you.</li>
+          </ul>
+        </div>
+        <div class="pitch">
+          <h3>Pitch #2</h3>
+          <ul>
+            <li><strong>For </strong>international travelers</li>
+            <li><strong>who </strong>need to know what their money is worth in various countries,</li>
+            <li><strong>the </strong>CurEx Converter</li>
+            <li><strong>is a </strong>foreign currency exchange web application</li>
+            <li><strong>that </strong>converts your currency type to multiple other foreign currencies in an instant.</li><br>
+            <li><strong>Unlike </strong>Wells Fargo's foreign exchange webpage,</li>
+            <li><strong>our product </strong>allows you to easily compare your currency to multiple foreign currency conversions at the same time using a customized list that you set.</li>
+          </ul>
+        </div>
+        <div class="pitch">
+          <h3>Pitch #3</h3>
+          <ul>
+            <li><strong>For </strong>new fisherman</li>
+            <li><strong>who </strong>want to learn about the local fish,</li>
+            <li><strong>the </strong>Local Fishnet</li>
+            <li><strong>is a </strong>fish searching web application</li>
+            <li><strong>that </strong>finds common types of fish in your area instantly.</li><br>
+            <li><strong>Unlike </strong>Fishbase.com</li>
+            <li><strong>our product </strong>is modernized, lightweight, and shows you details of local fish in a quick and efficient manner.</li>
+          </ul>
+        </div>                
+      </div>
+    
+    </section>
+  </main>
+</body>
+</html>
