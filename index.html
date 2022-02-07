@@ -6,18 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agile Programming Project - Elevator Pitches</title>
   <style>
+    body {
+      background-color: #c3dbe7;
+    }
+
+    header {
+      background-color: #454a4e;
+      box-shadow: 4px 4px 12px #333;
+      color: white;
+      margin: 0 auto;
+      padding: 30px;
+      text-align: center;
+      width: 75%;
+    }
+
     main {
-      border: 1px solid black;
+      background-color: #e7f6fc;
+      box-shadow: 4px 4px 12px #333;
       display: flex;
       flex-direction: row;
       justify-items: center;
       margin: 0 auto;
       padding: 30px;
       width: 75%;
-    }
-
-    header {
-      text-align: center;
     }
 
     section {
@@ -74,13 +85,23 @@
     }
 
     @media only screen and (max-width: 520px) {
+      header {
+        width: 100%;
+      }
+
       main {
         margin: 0;
         padding: 0;
         width: 100%;
       }
 
+      #availability {
+        padding: 0px;
+        margin: 0px;
+      }
+
       .pitch {
+        margin: 10px;
         padding: 0px;
         min-width: 150px;
       }
@@ -136,7 +157,7 @@
       <hr>
       <div class="pitchWrapper">
         <div class="pitch">
-          <h3>Pitch #1</h3>
+          <h3>Pitch #1: Pet Chaser</h3>
           <ul>
             <li><strong>For </strong>pet lovers</li>
             <li><strong>who </strong>want to find a new pet but unsure what to get and where,</li>
@@ -148,7 +169,7 @@
           </ul>
         </div>
         <div class="pitch">
-          <h3>Pitch #2</h3>
+          <h3>Pitch #2: CurEx Converter</h3>
           <ul>
             <li><strong>For </strong>international travelers</li>
             <li><strong>who </strong>need to know what their money is worth in various countries,</li>
@@ -160,7 +181,7 @@
           </ul>
         </div>
         <div class="pitch">
-          <h3>Pitch #3</h3>
+          <h3>Pitch #3: Local Fishnet</h3>
           <ul>
             <li><strong>For </strong>new fisherman</li>
             <li><strong>who </strong>want to learn about the local fish,</li>
